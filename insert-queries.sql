@@ -3,9 +3,9 @@ insert into role(id,name)values(2,'guide');
 
 select * from role;
 
-insert into skill(id,description,name)values(1,'self learning','learn');
-insert into skill(id,description,name)values(2,'technical skills','coding');
-select * from skill;
+insert into skill2(id,description,name)values(1,'self learning','learn');
+insert into skill2(id,description,name)values(2,'technical skills','coding');
+select * from skill2;
 
 insert into post_type(id,name)values(1,'business');
 insert into post_type(id,name)values(2,'business');
@@ -39,5 +39,5 @@ insert into user_new(id,emailid,name,password,phonenumber,profile_id,role_id,use
 insert into querytable(id,content,dateof,parent_id,user_id)values(1,'Alumini management',TO_DATE('2008/11/11','YYYY/MM/DD'),1,1);
 insert into querytable(id,content,dateof,parent_id,user_id)values(2,'Library management',To_DATE('2008/11/19','YYYY/MM/DD'),2,2);
 
- insert into event(id,dateof,descriptionValue,invitation,name,organiser_id)values(1,TO_DATE('2008/11/11','YYYY/MM/DD'),'Alumni meet','OBA','ProGrad',1);
- insert into event(id,dateof,descriptionValue,invitation,name,organiser_id)values(2,TO_DATE('2008/11/11','YYYY/MM/DD'),'Library opening','member','FACEPrep',2);
+ insert into event1(id,dateof,descriptionValue,invitation,name,organiser_id)values(1,TO_DATE('2008/11/11','YYYY/MM/DD'),'Alumni meet','OBA','ProGrad',1);
+ insert into event1(id,dateof,descriptionValue,invitation,name,organiser_id)values(2,TO_DATE('2008/11/11','YYYY/MM/DD'),'Library opening','member','FACEPrep',2);

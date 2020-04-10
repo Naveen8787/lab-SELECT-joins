@@ -1,5 +1,5 @@
 create table role(Id NUMBER(20), name varchar2(255) NOT NULL,primary key(Id));
-create table skill(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
+create table skill2(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
 create table post_type(Id NUMBER(20)primary key,name varchar2(255) NOT NULL);
 create table department(Id NUMBER(20)primary key, name varchar2(255) NOT NULL);
 
@@ -90,7 +90,7 @@ CREATE table querytable
 );
 
 desc querytable;
-create table event
+create table event1
 (
   Id NUMBER(20) primary key,
   dateof DATE NOT NULL,
@@ -100,7 +100,6 @@ create table event
   organiser_id Number(20)NOT NULL,
   FOREIGN KEY(organiser_id) REFERENCES user_new(Id)
 );
-
 create table post
 (
   Id NUMBER(20)primary key,
