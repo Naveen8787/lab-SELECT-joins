@@ -1,14 +1,16 @@
---Lab Select joins--
+--Lab select joins--
 
 --Query: 01
 select * from user_new 
 inner join role 
-on user_new.role_id = role.id;
+on user_new.role_id = role.id
+order by role.name ,user_new.name;
 
 --Query: 02
 select * from user_new 
 left outer join role 
-on user_new.role_id = role.id ;
+on user_new.role_id = role.id 
+order by role.name ,user_new.name;
 
 --Query: 03
 select user_new.name from user_new,role 
